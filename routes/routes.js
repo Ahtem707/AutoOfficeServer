@@ -15,12 +15,9 @@ router.get('/images/:dir/:imageName', images)
 router.post('/authUser/:method', authUser)
 
 
-const test = (req, res) => {
-    console.log("backend test route")
-    const data = req.body;
-    if (data.session) {
-        console.log("session true")
-    }
+const test = (req, res, next) => {
+
+    res.json({ "this is test": "Yoohoo" })
 }
 router.get('/test', test)
 
