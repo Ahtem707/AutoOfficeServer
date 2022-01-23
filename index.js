@@ -17,4 +17,4 @@ app.use(cors());
 // use router
 app.use(Router);
 
-app.listen(5000, () => console.log('Server running at http://localhost:5000'));
+app.listen(process.env.PORT || 3001, () => console.log('Server running at http://localhost:3001'));
