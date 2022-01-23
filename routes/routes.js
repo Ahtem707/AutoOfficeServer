@@ -14,4 +14,14 @@ router.post('/administrator', administrator);
 router.get('/images/:dir/:imageName', images)
 router.post('/authUser/:method', authUser)
 
+
+const test = (req, res) => {
+    console.log("backend Main request")
+    const data = req.body;
+    if (data.session) {
+        console.log("session true")
+    }
+}
+router.get('/test', test)
+
 export default router;
