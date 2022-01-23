@@ -16,7 +16,7 @@ router.post('/authUser/:method', authUser)
 
 
 const test = (req, res) => {
-    console.log("backend Main request")
+    console.log("backend test route")
     const data = req.body;
     if (data.session) {
         console.log("session true")
